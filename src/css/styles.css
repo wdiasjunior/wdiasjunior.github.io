@@ -1,0 +1,49 @@
+@font-face {
+  font-family: barlow, sans-serif;
+  src: url("src/fonts/Barlow-Medium.ttf") format('truetype');
+  /* font-weight: 400; */
+}
+/* @import "fonts"; */
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap'); */
+body{
+  margin: 0;
+  /* font-family: barlow; */
+}
+p{
+  font-family: "barlow" !important;
+  /* font-family: 'Lato', sans-serif; */
+  font-size: 50px;
+}
+
+.bodyContainer {
+  background-color: #bfc6f7;
+  width: 100vw;
+  height: 932px;
+  color: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardsContainer {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+
+}
+
+.card {
+  background: #171b25;
+  width: 380px;
+  height: 200px;
+  color: #fff;
+  margin: 6px;
+  border-radius: 6px;
+  box-shadow: 5px 6px 30px rgb(0 0 0 / 20%);
+}
