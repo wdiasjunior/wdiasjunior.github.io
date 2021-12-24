@@ -1,29 +1,44 @@
-@font-face {
-  font-family: barlow, sans-serif;
-  src: url("src/fonts/Barlow-Medium.ttf") format('truetype');
-  /* font-weight: 400; */
-}
-/* @import "fonts"; */
-/* @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap'); */
-body{
+@import "fonts";
+
+body {
   margin: 0;
-  /* font-family: barlow; */
+  /* font-family: 'Barlow', sans-serif; */
+  font-family: 'JetBrains Mono', monospace;
 }
-p{
-  font-family: "barlow" !important;
-  /* font-family: 'Lato', sans-serif; */
+p {
   font-size: 50px;
+}
+a {
+  text-decoration: none;
+  color: #e4e4e4;
 }
 
 .bodyContainer {
   background-color: #bfc6f7;
-  width: 100vw;
+  width: 100%;
   height: 932px;
-  color: #fff;
-  position: relative;
+  color: #e4e4e4;
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.headerContainer {
+  position: absolute;
+  top: 0;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  flex-direction: row;
+}
+.cube {
+  background: #171b25;
+  height: 40px;
+  width: 40px;
+  border-radius: 6px;
 }
 
 .cardsContainer {
@@ -35,7 +50,11 @@ p{
 
 .row {
   display: flex;
-
+  flex-direction: row;
+}
+.col {
+  display: flex;
+  flex-direction: column;
 }
 
 .card {
@@ -45,5 +64,102 @@ p{
   color: #fff;
   margin: 6px;
   border-radius: 6px;
-  box-shadow: 5px 6px 30px rgb(0 0 0 / 20%);
+  box-shadow: 15px 16px 30px rgb(0 0 0 / 20%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card1 {
+  height: 320px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+.card1 img {
+  border-radius: 50%;
+  height: 160px;
+}
+.title {
+  margin: 0;
+  margin-top: 10px;
+
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 37px;
+}
+.subtitle {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.card2 {
+  height: 320px;
+  width: 190px;
+  display: flex;
+  flex-direction: column;
+}
+.card2 a {
+  margin: 0;
+  margin-bottom: 7px;
+  margin-top: 7px;
+  font-size: 25px;
+}
+.card2 a:hover {
+  color: #e17a7a;
+  /* color: #7ff1aa */
+  /* color: #ffcd56; */
+  /* color: #a8befb; */
+  /* color: #8f7dbe; */
+}
+
+.card3 {
+  height: 154px;
+  width: 320px;
+}
+
+.card4 {
+  height: 130px;
+  width: 178px;
+}
+.card4 p {
+  font-size: 25px;
+}
+
+.card5 {
+  height: 83px;
+  width: 83px;
+}
+.card5 p {
+  font-size: 14px;
+}
+
+.card6 {
+  height: 154px;
+  width: 400px;
+}
+
+.card7 {
+  height: 71px;
+  width: 400px;
+}
+
+.card8 {
+  height: 71px;
+  width: 400px;
+}
+.card8 p {
+  font-size: 22px;
+  /* font-size: 1.5vw; */
+  margin: 14px;
+  line-height: 26px;
+}
+
+.card9 {
+  height: 320px;
+  width: 300px;
+}
+
+@@media only screen and (max-width: 1035px) {
+
 }
