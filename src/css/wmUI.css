@@ -10,6 +10,7 @@ body {
 }
 p {
   font-size: 50px;
+  color: #e4e4e4;
 }
 a {
   text-decoration: none;
@@ -26,6 +27,8 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  overflow-y: auto;
+
 }
 
 .headerContainer {
@@ -79,17 +82,14 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* transform: translateX(-50%); */
 }
 .centerCube a {
   margin: 0;
   padding: 0;
-  height: 25px;
-}
-.centerCube a img{
   height: 23px;
   width: 23px;
-  margin: auto;
+  background: url("../img/arch-linux-pink.svg") no-repeat;
+  background-size: contain;
 }
 
 .rightSideContainer {
@@ -241,8 +241,114 @@ a {
   margin: 10px;
   border-radius: 6px;
   align-self: flex-end;
+  display: flex;
+  justify-content: flex-start;
+}
+.footerLeftButton {
+  background: transparent;
+  /* background: #a8befb; */
+  /* background: #e4e4e4; */
+  height: 36px;
+  width: 36px;
+  margin: 2px 5px 2px 2px;
+  border-radius: 6px;
+
+  position: relative;
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* transform: translateX(-50%); */
+}
+.footerLeftButton .logo {
+  padding: 0;
+  height: 23px;
+  width: 23px;
+  margin: auto;
+  background: url("../img/arch-linux-pink.svg") no-repeat;
+  background-size: contain;
+}
+.footerLeftButton:hover .logo {
+  padding: 0;
+  height: 23px;
+  width: 23px;
+  margin: auto;
+  background: url("../img/arch-linux-bg.svg") no-repeat;
+  background-size: contain;
+}
+.footerLeftButton:hover, .footerLeftButtonActive {
+  background-color: #e4e4e4;
+}
+.footerLinksContainer {
+  display: flex;
+  justify-content: flex-start;
+}
+.footerLink {
+  background: transparent;
+  margin: 2px 3px;
+  border-radius: 6px;
+  height: 36px;
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+.footerLink:hover, .footerLinkActive {
+  background-color: #e4e4e4;
+}
+.footerLink:hover a, .footerLinkActive a{
+  color: #171b25;
+}
+.footerLink a {
+  margin: 0 20px;
 }
 
+.floatingMenu {
+  height: 200px;
+  width: 300px;
+  border-radius: 6px;
+  background: #171b25;
+  display: flex;
+  position: absolute;
+  bottom: 50px;
+  left: 0px;
+  visibility: hidden;
+}
+.menuList {
+  list-style-type: none;
+  overflow: auto;
+  padding: 0;
+  margin: 20px;
+}
+.menuList::-webkit-scrollbar {
+  width: 10px;
+}
+.menuList::-webkit-scrollbar-thumb {
+  background: #e4e4e4;
+  border-radius: 10px;
+}
+.menuList::-webkit-scrollbar-thumb:hover {
+  background: #d3d3d3;
+}
+.menuList::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+.menuItem {
+  margin: 7px 50px 7px 0;
+  width: 200px;
+  height: 30px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+}
+.menuItem a {
+  margin-left: 10px;
+}
+.menuItem:hover {
+  background: #E4E4E4;
+}
+.menuItem:hover a {
+  color: #171b25;
+}
 @media only screen and (max-width: 1025px) {
 
 }
