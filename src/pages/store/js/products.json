@@ -1,0 +1,15 @@
+{
+  "products":[
+    {
+      "id":"1",
+      "name":"CAMISETA TESTE",
+      "img":"camisa-branca.png",
+      "price":199.99,
+      "color":["branco"],
+      "size":["P", "M", "G"],
+      "parcelas":3,
+      "discount":0.75,
+      "date":"02/01/2022"
+    },
+  ]
+}

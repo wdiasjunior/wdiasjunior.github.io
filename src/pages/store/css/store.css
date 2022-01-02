@@ -14,7 +14,6 @@ header {
   z-index: 99;
   background: #fff;
 }
-
 .headerRowContainer {
   position: relative;
   display: flex;
@@ -27,7 +26,6 @@ header {
   background-color: #000;
   margin: 20px 20px 0;
 }
-
 .centerHeader {
   text-transform: uppercase;
 }
@@ -42,7 +40,6 @@ header {
   align-items: center;
   width: 100%;
 }
-
 .productsList {
   display: flex;
   /* width: 70%; */
@@ -51,7 +48,6 @@ header {
   flex-wrap: wrap;
   justify-content: center;
 }
-
 .product {
   height: 500px;
   width: 350px;
@@ -105,9 +101,8 @@ header {
   display: none;
 }
 
-
 .productModal {
-  visibility: hidden;
+  /* visibility: hidden; */
   position: fixed;
   top: 0;
   left: 0;
@@ -125,7 +120,43 @@ header {
   height: 800px;
   background-color: #fff;
   /* border-radius: 20px; */
+  display: flex;
 }
+.modalContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto;
+}
+.modalImageList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.modalImageListItem {
+  height: 100px;
+  width: 100px;
+  border: solid 2px #000;
+  margin: 10px 0;
+}
+.modalProduct {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modalProductImage {
+  width: 500px;
+  height: 500px;
+}
+.modalProductImage img {
+  width: 100%;
+  height: 100%;
+}
+.modalProductInfo {
+
+}
+
 
 .loadMoreButtonContainer {
   display: flex;
@@ -144,6 +175,7 @@ header {
 .loadMoreButton p {
   color: #fff;
 }
+
 footer {
   width: 100%;
   position: fixed;

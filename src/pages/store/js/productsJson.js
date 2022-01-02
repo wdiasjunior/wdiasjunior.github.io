@@ -1,0 +1,90 @@
+var products = [
+  {
+    "id":"1",
+    "name":"CAMISETA TESTE",
+    "img":"camisa-branca.png",
+    "price":199.99,
+    "color":["branco"],
+    "size":["P", "M", "G"],
+    "parcelas":3,
+    "discount":0.75,
+    "date":"02/01/2022"
+  },
+  {
+    "id":"2",
+    "name":"CAMISETA TESTE",
+    "img":"camisa-branca.png",
+    "price":199.99,
+    "color":["branco"],
+    "size":["P", "M", "G"],
+    "parcelas":3,
+    "discount":0.75,
+    "date":"02/01/2022"
+  },
+  {
+    "id":"3",
+    "name":"CAMISETA TESTE",
+    "img":"camisa-branca.png",
+    "price":199.99,
+    "color":["branco"],
+    "size":["P", "M", "G"],
+    "parcelas":3,
+    "discount":0.75,
+    "date":"02/01/2022"
+  },
+  {
+    "id":"4",
+    "name":"CAMISETA TESTE",
+    "img":"camisa-branca.png",
+    "price":199.99,
+    "color":["branco"],
+    "size":["P", "M", "G"],
+    "parcelas":3,
+    "discount":0.75,
+    "date":"02/01/2022"
+  },
+  {
+    "id":"5",
+    "name":"CAMISETA TESTE",
+    "img":"camisa-branca.png",
+    "price":199.99,
+    "color":["branco"],
+    "size":["P", "M", "G"],
+    "parcelas":3,
+    "discount":0.75,
+    "date":"02/01/2022"
+  },
+  {
+    "id":"6",
+    "name":"CAMISETA TESTE",
+    "img":"camisa-branca.png",
+    "price":199.99,
+    "color":["branco"],
+    "size":["P", "M", "G"],
+    "parcelas":3,
+    "discount":0.75,
+    "date":"02/01/2022"
+  },
+  {
+    "id":"7",
+    "name":"CAMISETA TESTE",
+    "img":"camisa-branca.png",
+    "price":199.99,
+    "color":["branco"],
+    "size":["P", "M", "G"],
+    "parcelas":3,
+    "discount":0.75,
+    "date":"02/01/2022"
+  },
+  {
+    "id":"8",
+    "name":"CAMISETA TESTE",
+    "img":"camisa-branca.png",
+    "price":199.99,
+    "color":["branco"],
+    "size":["P", "M", "G"],
+    "parcelas":3,
+    "discount":0.75,
+    "date":"02/01/2022"
+  }
+]
