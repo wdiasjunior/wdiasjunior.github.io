@@ -28,7 +28,6 @@ a {
   align-items: center;
   justify-content: space-between;
   overflow-y: auto;
-
 }
 
 .headerContainer {
@@ -260,15 +259,22 @@ a {
   justify-content: center;
   /* transform: translateX(-50%); */
 }
+.footerLeftButton, .menuItem {
+  cursor: pointer;
+}
+.floatingMenu {
+  cursor: default;
+}
 .footerLeftButton .logo {
+/* .logo1 { */
   padding: 0;
   height: 23px;
   width: 23px;
   margin: auto;
-  background: url("../img/arch-linux-pink.svg") no-repeat;
+  background: url("../img/arch-linux-offwhite.svg") no-repeat;
   background-size: contain;
 }
-.footerLeftButton:hover .logo {
+.footerLeftButton:hover .logo, .logo2 {
   padding: 0;
   height: 23px;
   width: 23px;
@@ -320,7 +326,7 @@ a {
   margin: 20px;
 }
 .menuList::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 .menuList::-webkit-scrollbar-thumb {
   background: #e4e4e4;
