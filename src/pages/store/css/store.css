@@ -46,7 +46,7 @@ header {
   max-width: 1110px;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .product {
   height: 500px;
@@ -98,11 +98,11 @@ header {
   width: 350px;
   /* background-color: red; */
   cursor: pointer;
-  display: none;
+  /* display: none; */
 }
 
 .productModal {
-  /* visibility: hidden; */
+  visibility: hidden;
   position: fixed;
   top: 0;
   left: 0;
@@ -191,4 +191,14 @@ footer {
   background: #000;
   color: #fff;
   margin: 0px 20px 20px;
+}
+
+@media only screen and (max-width: 1030px) {
+  .productsList {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  /* header centerContainer limit */
 }
