@@ -365,7 +365,6 @@ img {
 }
 
 @media only screen and (max-width: 1030px) {
-  /* css transition width and position of cards */
   .cardsContainer {
     flex-wrap: wrap;
     width: 826px;
@@ -378,18 +377,12 @@ img {
   }
 }
 
-@media only screen and (max-width: 860px) {
-  /* breakpoint for footer pannel links */
-  .cardsContainer {
-    padding-bottom: 65px;
-  }
-}
-
 @media only screen and (max-width: 835px) {
   .cardsContainer {
     flex-wrap: wrap;
     width: 482px;
     top: 595px;
+    padding-bottom: 65px;
   }
   .card2 {
     width: 178px;
