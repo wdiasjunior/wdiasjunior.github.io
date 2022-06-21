@@ -1,3 +1,9 @@
+(function() {
+  console.log(
+    "%c Curious to see my ugly code, huh?",
+    "color: #bfc6f7; font-size: 30px; font-weight: bold; background-color: black;");
+})();
+
 window.addEventListener('click', function(e){
   let logo = document.getElementById("logo");
   let button = document.getElementById("footerLeftButton");
