@@ -75,7 +75,22 @@ img {
   background: #171b25;
   height: 40px;
   width: 250px;
+  min-width: 145px;
   border-radius: 6px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.kanji {
+  border-radius: 6px;
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  cursor: pointer;
+}
+.kanji:hover {
+  background-color: #e4e4e4;
+  color: #171b25;
 }
 
 .centerContainer {
@@ -114,6 +129,15 @@ img {
   height: 40px;
   width: 250px;
   border-radius: 6px;
+  padding-right: 8px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#moon, #sun {
+  width:  26px;
+  height: 26px;
+  cursor: pointer;
 }
 
 .cardsContainer {
@@ -168,9 +192,13 @@ img {
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 37px;
 }
+.name {
+  font-size: 14px;
+  margin: 5px;
+}
 .subtitle {
   font-size: 20px;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .card2 {
@@ -185,7 +213,9 @@ img {
   margin-top: 7px;
   font-size: 25px;
 }
-.card2 a:hover {
+.card2 a:hover ,
+.card3 a:hover ,
+.card7 a:hover {
   color: #e17a7a;
   /* color: #7ff1aa */
   /* color: #ffcd56; */
@@ -196,6 +226,7 @@ img {
 .card3 {
   height: 154px;
   width: 320px;
+  font-size: 50px;
 }
 
 .card4 {
@@ -211,17 +242,22 @@ img {
   width: 83px;
 }
 .card5 p {
-  font-size: 14px;
+  font-size: 40px;
 }
 
 .card6 {
   height: 154px;
   width: 400px;
 }
+.card6 p {
+  font-size: 28px;
+  text-align: center;
+}
 
 .card7 {
   height: 71px;
   width: 400px;
+  font-size: 28px;
 }
 
 .card8 {
@@ -238,6 +274,18 @@ img {
 .card9 {
   height: 320px;
   width: 300px;
+}
+#clickMe {
+  cursor: pointer;
+  text-align: center;
+}
+
+.card10 {
+
+}
+.card10 p {
+  margin: 0;
+  font-size: 45px;
 }
 
 .footerContainer {
@@ -404,6 +452,12 @@ img {
   .card9, .card10 {
     width: 229px;
   }
+  .card10 p {
+    font-size: 38px;
+  }
+  #clickMe {
+    font-size: 40px;
+  }
 }
 
 @media only screen and (max-width: 592px) {
@@ -426,4 +480,17 @@ img {
   .card3, .card4 {
     width: 268px;
   }
+  .card10 p {
+    font-size: 43px;
+  }
+}
+
+#colon {
+  animation: blink 2s linear infinite;
+}
+@keyframes blink {
+  0% { opacity: 0; }
+}
+@-webkit-keyframes blink {
+  0% { opacity: 0; }
 }
