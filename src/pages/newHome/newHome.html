@@ -5,12 +5,14 @@
     <link rel="icon" type="image/x-icon" href="src/img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="newHome.css">
     <script defer src="newHome.js" type="text/javascript"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
     <title>wdias.dev</title>
   </head>
   <body>
     <header class="header">
-      <nav class="header_fixed header_fixed_blur">
-        <span class="header_title">wdias.dev</span>
+      <nav class="header_fixed">
+        <a class="header_title" href="/">wdias.dev</a>
         <div class="header_items">
           <a class="header_item" href="#">about me</a>
           <a class="header_item" href="#">projects</a>
@@ -49,5 +51,21 @@
       opencv.js barbell tracker
       japanese learning app (soon) ?
     </div>
+    <pre>
+      <code class="language-js">
+        const profile = {
+          firstName: 'Wellington',
+          lastName: 'Dias', // it's actually Junior
+          nickName: 'Will',
+          preferred_os: 'Linux',
+          languages: ['Python', 'JavaScript', 'TypeScript', 'C'],
+          frameworks: ['React', 'React Native', 'Ionic', 'Angular'],
+          databases: ['PostgreSQL'],
+          editor: 'atom',
+          fullstack: true,
+          learning: ['Rust', 'Django', 'MongoDB']
+        }
+      </code>
+    </pre>
   </body>
 </html>
