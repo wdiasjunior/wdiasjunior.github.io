@@ -16,6 +16,9 @@ body {
   display: flex;
   flex-direction: column;
 }
+::-webkit-scrollbar {
+  display: none;
+}
 p {
   font-size: 50px;
   color: #e4e4e4;
@@ -102,7 +105,7 @@ img {
   align-items: center;
   justify-content: center;
 }
-.centerCube {
+.centerPanel {
   background: #171b25;
   height: 40px;
   width: 40px;
@@ -111,7 +114,7 @@ img {
   align-items: center;
   justify-content: center;
 }
-.centerCube a {
+.centerPanel a {
   margin: 0;
   padding: 0;
   height: 23px;
@@ -461,8 +464,11 @@ img {
 }
 
 @media only screen and (max-width: 592px) {
-  .leftSideContainer, .leftSidePannel, .rightSideContainer, .rightSidePannel {
+  .leftSideContainer, .leftSidePannel, .rightSideContainer {
     width: 100%;
+  }
+  .rightSidePannel {
+    width: 97%;
   }
 }
 
@@ -482,6 +488,11 @@ img {
   }
   .card10 p {
     font-size: 43px;
+  }
+}
+@media only screen and (max-width: 340px) {
+  .rightSidePannel {
+    width: 94%;
   }
 }
 
