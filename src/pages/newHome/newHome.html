@@ -10,62 +10,96 @@
     <title>wdias.dev</title>
   </head>
   <body>
-    <header class="header">
+
+    <header>
       <nav class="header_fixed">
-        <a class="header_title" href="/">wdias.dev</a>
+        <a class="header_title" href="#">wdias.dev</a>
         <div class="header_items">
-          <a class="header_item" href="#">about me</a>
-          <a class="header_item" href="#">projects</a>
-          <a class="header_item" href="#">contact</a>
+          <a onclick="toggleMenu()" class="header_item" href="#about_me">about me</a>
+          <a onclick="toggleMenu()" class="header_item" href="#projects">projects</a>
+          <a onclick="toggleMenu()" class="header_item" href="#contact">contact</a>
+        </div>
+        <div id="menu_icon" onclick="toggleMenu()">
+          <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+            <path fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="32" d="M80 160h352M80 256h352M80 352h352"/>
+          </svg>
         </div>
       </nav>
+      <div class="menu">
+        <a onclick="toggleMenu()" class="menu_item" href="#about_me">about me</a>
+        <a onclick="toggleMenu()" class="menu_item" href="#projects">projects</a>
+        <a onclick="toggleMenu()" class="menu_item" href="#contact">contact</a>
+      </div>
     </header>
-    <br>
-    <div class="">
-      okjafhslkdjhfalksjdhflaksjdhflaksjdhflaksjdhf
-      okjafhslkdjhfalksjdhflaksjdhflaksjdhflaksjdhf
-      okjafhslkdjhfalksjdhflaksjdhflaksjdhflaksjdhf
-      okjafhslkdjhfalksjdhflaksjdhflaksjdhflaksjdhf
-      okjafhslkdjhfalksjdhflaksjdhflaksjdhflaksjdhf
-      okjafhslkdjhfalksjdhflaksjdhflaksjdhflaksjdhf
-      okjafhslkdjhfalksjdhflaksjdhflaksjdhflaksjdhf
-      okjafhslkdjhfalksjdhflaksjdhflaksjdhflaksjdhf
-      okjafhslkdjhfalksjdhflaksjdhflaksjdhflaksjdhf
+
+    <div class="intro">
+
+      <div class="intro_left">
+        <span class="intro_left_text1">Hello, I'm</span>
+        <span class="intro_left_text2">Wellington</span>
+        <span class="intro_left_text3">Front-End and Mobile Developer</span>
+        <a class="intro_left_text4" href="https://github.com/wdiasjunior" target="_blank">GitHub</a>
+      </div>
+
+      <div class="intro_right">
+        <pre>
+          <code class="language-js">
+    const profile = {
+      firstName: 'Wellington',
+      lastName: 'Dias', // it's actually Junior
+      nickName: 'Will',
+      preferred_os: 'Linux',
+      languages: ['Python', 'JavaScript', 'TypeScript', 'C'],
+      frameworks: ['React', 'React Native', 'Ionic', 'Angular'],
+      databases: ['PostgreSQL'],
+      editor: 'atom',
+      fullstack: true,
+      learning: ['Rust', 'Django', 'MongoDB']
+    }
+          </code>
+        </pre>
+      </div>
+
     </div>
-    <br>
-    <div class="about_me">
-      linux aficionado
-      bread enjoyer
-      rust
-      python
-      c
-      react native
-      typescript
-      weightlifting
-      musician
+
+    <div id="about_me">
+      <div class="about_me_content">
+        <span class="about_me_text">
+          Hi, my name is Wellington and I'm a computer scientist from Brazil,
+          currently working as a Front-End developer.
+          <br>
+          I like making software that makes me more productive and people's lives easier.
+          <br>
+          I'm a Linux enthusiast with a passion for music and weightlifting.
+        </span>
+      </div>
     </div>
-    <br>
-    <div class="projects">
-      powerlifting app
-      wm ui
-      opencv.js barbell tracker
-      japanese learning app (soon) ?
+
+    <div id="projects">
+      <div class="projects_content">
+        Here are some of my projects:
+        <br>
+        <br>
+        powerlifting app (soon)
+        <br>
+        wm ui
+        <br>
+        opencv.js barbell tracker
+        <br>
+        japanese learning app (soon)
+        <br>
+      </div>
     </div>
-    <pre>
-      <code class="language-js">
-        const profile = {
-          firstName: 'Wellington',
-          lastName: 'Dias', // it's actually Junior
-          nickName: 'Will',
-          preferred_os: 'Linux',
-          languages: ['Python', 'JavaScript', 'TypeScript', 'C'],
-          frameworks: ['React', 'React Native', 'Ionic', 'Angular'],
-          databases: ['PostgreSQL'],
-          editor: 'atom',
-          fullstack: true,
-          learning: ['Rust', 'Django', 'MongoDB']
-        }
-      </code>
-    </pre>
+
+    <div id="contact">
+      <div class="contact_content">
+        wdias
+      </div>
+    </div>
+
+    <footer>
+      © Wellington Dias 2022
+    </footer>
+
   </body>
 </html>
