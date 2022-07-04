@@ -14,7 +14,7 @@ window.addEventListener('click', function(e){
   const menu = document.getElementById("floatingMenu");
   const clickMe = document.getElementById("clickMe");
 
-  if (button.contains(e.target)){
+  if(button.contains(e.target)){
     if(window.getComputedStyle(menu).visibility === "hidden") {
       menu.style.visibility = "visible";
       logo.classList.remove("logo");

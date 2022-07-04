@@ -27,3 +27,10 @@ function toggleMenu() {
     document.getElementsByClassName("menu")[0].style.display = "flex";
   }
 }
+
+window.addEventListener('click', function(e){
+  if(!document.getElementById("header").contains(e.target)) {
+    isMenuOpen = false;
+    document.getElementsByClassName("menu")[0].style.display = "none";
+  }
+});
