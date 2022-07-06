@@ -85,16 +85,19 @@ header {
 }
 
 .intro_right {
-  width: 520px;
+  width: 80vw;
+  max-width: 540px;
   padding: 20px;
   background: #fff;
   box-shadow: 0 0 20px 1px rgba(0,0,0,15%);
   /* border-radius: 5px; */
 }
 pre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #fff;
   margin: 0;
-  /* background: inherit; */
 }
 code {
   background: inherit !important;
@@ -107,7 +110,11 @@ code {
 .about_me_content, .contact_content {
   background: #000;
   color: #fff;
+  padding: 20px;
 }
+/* .about_me_text {
+  margin-bottom: 10px;
+} */
 .projects_content {
   background: #fff;
   color: #000;
@@ -165,6 +172,42 @@ footer {
     margin-right: 60px;
     cursor: pointer;
     background: transparent;
+  }
+  pre {
+    font-size: calc(9px + 0.4vw);
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  pre {
+    font-size: calc(6px + 1vw);
+  }
+}
+@media only screen and (max-width: 415px) {
+  pre {
+    font-size: calc(5px + 1vw);
+  }
+}
+@media only screen and (max-width: 340px) {
+  /* .intro_left_text1 {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  .intro_left_text2 {
+    font-size: 36px;
+  }
+  .intro_left_text3 {
+    font-size: 17px;
+    margin-top: 12px;
+  }
+  .intro_left_text4 {
+    font-size: 17px;
+    margin-top: 26px;
+  } */
+}
+@media only screen and (max-width: 330px) {
+  pre {
+    font-size: calc(4px + 1vw);
   }
 }
 
