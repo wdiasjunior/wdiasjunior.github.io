@@ -15,9 +15,9 @@
       <nav class="header_fixed">
         <a class="header_title" href="#">wdias.dev</a>
         <div class="header_items">
-          <a onclick="toggleMenu()" class="header_item" href="#about_me">about me</a>
-          <a onclick="toggleMenu()" class="header_item" href="#projects">projects</a>
-          <!-- <a onclick="toggleMenu()" class="header_item" href="#contact">contact</a> -->
+          <a class="header_item" href="#about_me">about me</a>
+          <a class="header_item" href="#projects">projects</a>
+          <!-- <a class="header_item" href="#contact">contact</a> -->
           <a onclick="themeSwitcher()" class="header_item" id="theme_switcher_desktop">dark mode</a>
         </div>
         <div id="menu_icon" onclick="toggleMenu()">
@@ -27,9 +27,9 @@
         </div>
       </nav>
       <div class="menu">
-        <a class="menu_item" href="#about_me">about me</a>
-        <a class="menu_item" href="#projects">projects</a>
-        <!-- <a class="menu_item" href="#contact">contact</a> -->
+        <a onclick="toggleMenu()" class="menu_item" href="#about_me">about me</a>
+        <a onclick="toggleMenu()" class="menu_item" href="#projects">projects</a>
+        <!-- <a onclick="toggleMenu()" class="menu_item" href="#contact">contact</a> -->
         <a onclick="themeSwitcher()" class="menu_item" id="theme_switcher_mobile">dark mode</a>
       </div>
     </header>
@@ -133,7 +133,7 @@ const profile = {
         </div>
 
         <div class="project_item">
-          <a href="#" target="_blank">
+          <a href="#">
             <div class="project_item_description">
               <div class="project_item_description_left">
                 <h3>unnamed app (comming soon)</h3>
@@ -145,7 +145,9 @@ const profile = {
                   It currently features an editor and a RM and weight plate calculators.
                 </p>
               </div>
-              <!-- <img src="/src/img/eu.png" alt=""> -->
+              <div class="project_item_description_right">
+                <img src="/src/img/app.gif" loading="lazy">
+              </div>
             </div>
           </a>
         </div>
@@ -171,6 +173,9 @@ const profile = {
                   desktop window manager interface.
                 </p>
               </div>
+              <div class="project_item_description_right">
+                <img src="/src/img/wmUI.png" loading="lazy">
+              </div>
             </div>
           </a>
         </div>
@@ -191,6 +196,9 @@ const profile = {
                   <li>Realtime Acceleration</li>
                   <li>Realtime Horizontal Displacement</li>
                 </ul>
+              </div>
+              <div class="project_item_description_right">
+                <img src="/src/img/barbellTracker.gif" loading="lazy">
               </div>
             </div>
           </a>
