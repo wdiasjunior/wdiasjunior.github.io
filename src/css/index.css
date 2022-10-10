@@ -60,6 +60,25 @@ header {
 .header_item {
   position: relative;
   margin-left: 20px;
+  cursor: pointer;
+  position: relative;
+  --hover-menu-item-color: #fff;
+}
+.header_item:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.header_item::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  background-color: var(--hover-menu-item-color);
+  transform-origin: bottom right;
+  transition: transform 0.20s ease-out;
 }
 #menu_icon {
   position: relative;
@@ -91,9 +110,23 @@ header {
 .intro_left_text4 {
   font-size: 17px;
   margin-right: 18px;
+  position: relative;
 }
-.intro_left_text4:hover, .contact_link:hover {
-  text-decoration: underline;
+.intro_left_text4:hover::after, .contact_link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.intro_left_text4::after, .contact_link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  background-color: #000;
+  transform-origin: bottom right;
+  transition: transform 0.20s ease-out;
 }
 .intro_left_links_container {
   margin-top: 26px;

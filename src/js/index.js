@@ -4,6 +4,7 @@ window.onscroll = function() {
     document.getElementsByClassName("header_fixed")[0].classList.add("blur");
     document.getElementsByClassName("header_fixed")[0].classList.remove("difference");
     document.getElementsByClassName("header_fixed")[0].style.color = "#000";
+    document.getElementsByClassName("header_item")[0].style.setProperty("--hover-menu-item-color", "#000");
 
     document.getElementById("menu_icon").style.filter = "invert(1)";
 
@@ -11,6 +12,7 @@ window.onscroll = function() {
     document.getElementsByClassName("header_fixed")[0].classList.remove("blur");
     document.getElementsByClassName("header_fixed")[0].classList.add("difference");
     document.getElementsByClassName("header_fixed")[0].style.color = "#fff";
+    document.getElementsByClassName("header_item")[0].style.setProperty("--hover-menu-item-color", "#fff");
 
     document.getElementById("menu_icon").style.filter = "invert(0)";
   }
