@@ -3,8 +3,10 @@ window.onscroll = function() {
   if(window.scrollY >= scrollTrigger) {
     document.getElementsByClassName("header_fixed")[0].classList.add("blur");
     document.getElementsByClassName("header_fixed")[0].classList.remove("difference");
-    document.getElementsByClassName("header_fixed")[0].style.color = "#000";
-    document.getElementsByClassName("header_item")[0].style.setProperty("--hover-menu-item-color", "#000");
+    document.getElementsByClassName("header_fixed")[0].style.color = "#2E3440";
+    document.getElementsByClassName("header_item")[0].style.setProperty("--hover-menu-item-color", "#2E3440");
+    document.getElementsByClassName("header_item")[1].style.setProperty("--hover-menu-item-color", "#2E3440");
+    // document.getElementsByClassName("header_item")[2].style.setProperty("--hover-menu-item-color", "#2E3440");
 
     document.getElementById("menu_icon").style.filter = "invert(1)";
 
@@ -13,13 +15,14 @@ window.onscroll = function() {
     document.getElementsByClassName("header_fixed")[0].classList.add("difference");
     document.getElementsByClassName("header_fixed")[0].style.color = "#fff";
     document.getElementsByClassName("header_item")[0].style.setProperty("--hover-menu-item-color", "#fff");
+    document.getElementsByClassName("header_item")[1].style.setProperty("--hover-menu-item-color", "#fff");
+    // document.getElementsByClassName("header_item")[2].style.setProperty("--hover-menu-item-color", "#fff");
 
     document.getElementById("menu_icon").style.filter = "invert(0)";
   }
 };
 
 let isMenuOpen = false;
-
 function toggleMenu() {
   if(isMenuOpen && window.innerWidth <= 640) {
     isMenuOpen = false;
@@ -37,14 +40,12 @@ window.addEventListener('click', function(e){
   }
 });
 
-// yes, this theme switcher is simply an invert filter
-// but we don't need to talk about that
-let invertValue = 0;
+let darkTheme = false;
 function themeSwitcher() {
-  invertValue = invertValue ? 0 : 1;
-  document.getElementsByTagName("html")[0].style.filter = `invert(${invertValue})`;
+  darkTheme = darkTheme ? false : true;
+  document.getElementsByTagName("html")[0].style.filter = `invert(${darkTheme ? 1 : 0})`;
   const imgElements = document.getElementsByTagName("img");
-  if(invertValue) {
+  if(darkTheme) {
     document.getElementById("theme_switcher_desktop").innerHTML = "light mode";
     document.getElementById("theme_switcher_mobile").innerHTML = "light mode";
     for(let i = 0; i < imgElements.length; i++) {
