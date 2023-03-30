@@ -61,3 +61,11 @@ function themeSwitcher() {
     toggleMenu();
   }
 }
+
+// themeselector.addEventListener("click", () => {
+//   if(document.documentElement.getAttribute("data-theme") === "dark") {
+//     localStorage.setItem("theme", "light");
+//   } else {
+//     localStorage.setItem("theme", "dark");
+//   }
+// })

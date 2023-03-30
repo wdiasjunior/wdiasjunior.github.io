@@ -2,6 +2,7 @@
 
 :root {
   color-scheme: only light;
+  /* color-scheme: light dark; */
 }
 html {
   scroll-behavior: smooth;
@@ -193,6 +194,7 @@ code {
   padding: 30px;
   margin-bottom: 12px;
   border: 1px solid #D8DEE9;
+  box-shadow: 2px 2px 8px 2px #14171a1a;
 }
 .project_item:hover {
   background-color: #ECEFF4;
