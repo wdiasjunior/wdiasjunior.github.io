@@ -29,6 +29,7 @@
       <div class="menu">
         <a onclick="toggleMenu()" class="menu_item" href="#about_me">about me</a>
         <a onclick="toggleMenu()" class="menu_item" href="#projects">projects</a>
+        <!-- <a onclick="toggleMenu()" class="menu_item" href="/blog">blog</a> -->
         <!-- <a onclick="toggleMenu()" class="menu_item" href="#contact">contact</a> -->
         <!-- <a onclick="themeSwitcher()" class="menu_item" id="theme_switcher_mobile">dark mode</a> -->
       </div>
@@ -39,7 +40,7 @@
       <div class="intro_left">
         <span class="intro_left_text1">Hello, I'm</span>
         <span class="intro_left_text2">Wellington</span>
-        <span class="intro_left_text3">Front-End and Mobile Developer</span>
+        <span class="intro_left_text3">Software Engineer</span>
         <div class="intro_left_links_container">
           <a class="intro_left_text4" href="https://github.com/wdiasjunior" target="_blank">GitHub</a>
           <a class="intro_left_text4" href="mailto:wdias@wdias.dev">E-mail</a>
@@ -50,16 +51,16 @@
         <pre class="code-desktop">
           <code class="language-js">
 const profile = {
-  firstName: 'Wellington',
-  lastName: 'Dias',
-  nickName: 'Will',
-  preferred_os: 'Linux',
-  languages: ['Python', 'JavaScript', 'TypeScript', 'C'],
-  frameworks: ['React', 'React Native', 'Ionic', 'Angular'],
-  databases: ['PostgreSQL'],
-  editor: 'atom',
-  fullstack: true,
-  learning: ['Rust', 'Django', 'MongoDB']
+    firstName: 'Wellington',
+    lastName: 'Dias', // it's actually Junior
+    nickName: 'Will',
+    preferred_os: 'Linux',
+    languages: ['Python', 'JavaScript', 'TypeScript', 'Dart', 'C'],
+    frameworks: ['React', 'React Native', 'Flutter', 'Ionic', 'Angular'],
+    databases: ['PostgreSQL', 'MongoDB'],
+    editor: 'atom',
+    fullstack: true,
+    learning: ['Rust', 'SurrealDB', 'Iced', 'SolidJS']
 }
           </code>
         </pre>
@@ -67,30 +68,34 @@ const profile = {
           <code class="language-js">
 const profile = {
     firstName: 'Wellington',
-    lastName: 'Dias',
+    lastName: 'Dias', // it's actually Junior
     nickName: 'Will',
     preferred_os: 'Linux',
     languages: [
         'Python',
         'JavaScript',
         'TypeScript',
+        'Dart',
         'C'
     ],
     frameworks: [
         'React',
         'React Native',
+        'Flutter',
         'Ionic',
         'Angular'
     ],
     databases: [
-        'PostgreSQL'
+        'PostgreSQL',
+        'MongoDB'
     ],
     editor: 'atom',
     fullstack: true,
     learning: [
         'Rust',
-        'Django',
-        'MongoDB'
+        'SurrealDB',
+        'Iced',
+        'SolidJS'
     ]
 }
           </code>
@@ -109,7 +114,7 @@ const profile = {
           I like making software that makes me more productive and people's lives easier.
         </p>
         <p class="about_me_text">
-          I'm a Linux enthusiast with a passion for music and weightlifting.
+          I'm a Linux enthusiast, obsessed with performance, and with a passion for music and weightlifting.
         </p>
       </div>
     </div>
@@ -152,16 +157,6 @@ const profile = {
             </div>
           </a>
         </div>
-
-        <!-- <div class="project_item">
-          <a href="#" target="_blank">
-            <div class="project_item_description">
-              <div class="project_item_description_left">
-                <h3>clipboard manager (soon)</h3>
-              </div>
-            </div>
-          </a>
-        </div> -->
 
         <div class="project_item">
           <a href="src/pages/wmUI/wmUI.html" target="_blank">
