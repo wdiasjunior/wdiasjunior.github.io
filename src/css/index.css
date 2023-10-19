@@ -163,7 +163,7 @@ header {
   width: 80vw;
   max-width: 580px;
   padding: 20px;
-  background: #fff;
+  background-color: #fff;
   box-shadow: 0 0 20px 1px rgba(0,0,0,15%);
   /* border-radius: 5px; */
 }
@@ -171,11 +171,11 @@ pre {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #fff;
+  background-color: #fff;
   margin: 0;
 }
 code {
-  background: inherit !important;
+  background-color: inherit !important;
 }
 
 .code-desktop {
@@ -423,7 +423,7 @@ footer {
 /* highlight.js styling */
 
 .hljs {
-  background: #fff;
+  background-color: #fff;
   color: #2E3440;
 }
 .hljs-string,
@@ -435,13 +435,13 @@ footer {
 .hljs-addition,
 .hljs-attribute,
 .hljs-link {
-  color: #888;
+  color: #757575;
 }
 .hljs-comment,
 .hljs-quote,
 .hljs-meta,
 .hljs-deletion {
-  color: #ccc;
+  color: #757575;
 }
 .hljs-keyword,
 .hljs-selector-tag,
