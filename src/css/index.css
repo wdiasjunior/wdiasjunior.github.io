@@ -315,6 +315,7 @@ footer {
     margin-bottom: 50px;
   }
 }
+
 @media only screen and (max-width: 880px) {
   .project_item a {
     flex-direction: column;
@@ -338,6 +339,7 @@ footer {
     max-width: 100%
   }
 }
+
 @media only screen and (max-width: 640px) {
   .header_items {
     display: none;
@@ -389,6 +391,13 @@ footer {
     display: flex;
   }
 }
+
+@media only screen and (max-width: 430px) {
+  .hljs-comment {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 400px) {
   .header_title {
     margin-left: 30px;
