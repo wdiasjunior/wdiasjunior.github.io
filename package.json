@@ -1,0 +1,17 @@
+{
+  "name": "wdias.dev",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "host": "astro dev --host",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/prism": "^3.0.0",
+    "astro": "^3.5.3"
+  }
+}

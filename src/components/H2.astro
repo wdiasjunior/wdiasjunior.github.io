@@ -1,0 +1,9 @@
+---
+
+const { title } = Astro.props;
+
+const id = title.replace(" ", "-");
+
+---
+
+<h2 id={id}>{title}<a href={`#${id}`}> #</a></h2>

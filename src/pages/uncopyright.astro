@@ -1,0 +1,35 @@
+---
+
+import Layout from '../layouts/Layout.astro';
+
+---
+
+<Layout title="404 - wdias.dev">
+  <main class="uncopyright">
+    <h1>Uncopyright</h1>
+    <p>
+      All content on this website is copyright free.
+      Yes, that means that everything is under the public domain and you can
+      use the content or code of this website however you would like.
+    </p>
+    <p>Attribution is appreciated, but not required.</p>
+    <p>
+      More specifically, all the content is under the
+      <a href="https://unlicense.org/" target="_blank"> Unlicense</a>.
+      You can find the full “license” on the GitHub
+      <a href="https://github.com/wdiasjunior/wdiasjunior.github.io" target="_blank"> repo </a>
+      for this project.
+      Keep in mind that the source code for other projects mentioned in this
+      website may have different licenses.
+    </p>
+  </main>
+</Layout>
+
+<style>
+  .uncopyright {
+    :is(a) {
+      color: var(--accent);
+    }
+  }
+
+</style>

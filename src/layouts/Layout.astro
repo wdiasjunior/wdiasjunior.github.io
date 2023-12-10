@@ -1,0 +1,280 @@
+---
+
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const { title } = Astro.props;
+
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <Header />
+    <slot />
+    <Footer />
+  </body>
+</html>
+<style is:global>
+  /* :root {
+    --accent: 136, 58, 234;
+    --accent-light: 224, 204, 250;
+    --accent-dark: 49, 10, 101;
+    --accent-gradient: linear-gradient(
+      45deg,
+      rgb(var(--accent)),
+      rgb(var(--accent-light)) 30%,
+      white 60%
+    );
+  }
+  html {
+    font-family: system-ui, sans-serif;
+    background: #13151a;
+    background-size: 224px;
+  }
+  code {
+    font-family:
+      Menlo,
+      Monaco,
+      Lucida Console,
+      Liberation Mono,
+      DejaVu Sans Mono,
+      Bitstream Vera Sans Mono,
+      Courier New,
+      monospace;
+  } */
+
+  /* @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap'); */
+
+  :root {
+    /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400; */
+
+    /* font-family: 'JetBrains Mono', monospace; */
+    /* font-family: 'Fira Mono', monospace; */
+    /* font-family: 'Courier new', monospace; */
+    /* font-family: Menlo, monospace; */
+    /* font-family: Menlo, Courier, "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono", "Liberation Mono", monospace; */
+    font-family: "DejaVu Sans Mono", monospace;
+
+    /* font-family: "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono",
+    "Liberation Mono", Courier, Menlo, monospace; */
+
+    /* color-scheme: only light; */
+    color-scheme: light dark;
+
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+
+    --text: #FFFFFF;
+    --background: #212121;
+    --primary: #323232;
+    --secondary: #0D7377;
+    --accent: #14FFEC;
+
+    color: var(--text);
+    background-color: var(--background);
+    line-height: 1.5;
+    font-size: 1.125rem;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+
+    @media screen and (max-width: 410px) {
+      padding-right: 0.75rem;
+      padding-left: 0.75rem;
+      padding-top: 0.5rem;
+      padding-bottom: 5rem;
+    }
+  }
+
+  h1 {
+    margin-top: 0;
+  }
+
+  a {
+    color: var(--text);
+    text-decoration: inherit;
+  }
+
+  /*
+
+  --text: #dff1f0;
+  --background: #0c1c1c;
+  --primary: #275957;
+  --secondary: #091515;
+  --accent: #48a3a0;
+
+  --text: #f4f7fb;
+  --background: #060a0f;
+  --primary: #203756;
+  --secondary: #070c13;
+  --accent: #3e6ca8;
+
+  --text: #ffffff;
+  --background: #011310;
+  --primary: #0be5c1;
+  --secondary: #03493d;
+  --accent: #24f5d2;
+
+  --text: #f6fdfb;
+  --background: #03110d;
+  --primary: #24cc97;
+  --secondary: #083023;
+  --accent: #2bdaa2;
+
+  --text: #f2fcfc;
+  --background: #082b29;
+  --primary: #3fd9d4;
+  --secondary: #092f2e;
+  --accent: #2ed6d0;
+
+  --text: #f7fdfb;
+  --background: #000000;
+  --primary: #51dba4;
+  --secondary: #08261a;
+  --accent: #2acf8d;
+
+  --text: #e0e8f0;
+  --background: #111922;
+  --primary: #3d5a7b;
+  --secondary: #111922;
+  --accent: #547dab;
+
+  --text: #e5f0ef;
+  --background: #020303;
+  --primary: #80b7b3;
+  --secondary: #0f1a19;
+  --accent: #589d97;
+
+  --text: #e4f0f2;
+  --background: #0a1415;
+  --primary: #4c939a;
+  --secondary: #0f1d1f;
+  --accent: #52a0a7;
+
+  --text: #f6fcfe;
+  --background: #000000;
+  --primary: #7cd2ee;
+  --secondary: #082e3b;
+  --accent: #2bb5e3;
+
+  --text: #e5eff0;
+  --background: #080c0d;
+  --primary: #8fb9bd;
+  --secondary: #1c2f30;
+  --accent: #6ea5aa;
+
+  --text: #f7fdfd;
+  --background: #061313;
+  --primary: #8fdbdb;
+  --secondary: #0c2727;
+  --accent: #3ec1c1;
+
+  --text: #f1f7fd;
+  --background: #010205;
+  --primary: #0a2e5c;
+  --secondary: #041020;
+  --accent: #186bd8;
+
+  */
+
+  /* --text: #ffffff;
+  --background: #011310;
+  --primary: #0be5c1;
+  --secondary: #03493d;
+  --accent: #24f5d2; */
+
+  /* --text: #eef3f2;
+  --background: #020807;
+  --primary: #0be5c1;
+  --secondary: #03493d;
+  --accent: #24f5d2; */
+
+  /* --text: #020807;
+  --background: #eefcf8;
+  --primary: #33dba6;
+  --secondary: #cff7ea;
+  --accent: #25d49d; */
+
+  /*  */
+
+  /* --text: #f6fdfb;
+  --background: #03110d;
+  --primary: #083023;
+  --secondary: #24cc97;
+  --accent: #2bdaa2; */
+
+  /* --text: #FFFFFF;
+  --text-faded: #abb6c1;;
+  --background: #222830;
+  --primary: #24cc97;
+  --secondary: #202021;
+  --accent: #28ffd4; */
+
+  /* --text: #FFFFFF;
+  --background: #222831;
+  --primary: #393E46;
+  --secondary: #EEEEEE;
+  --accent: #00ADB5; */
+
+  /* --text: #e8e6e3;
+  --text2: #a69e92;
+  --background: #1b1e1f;
+  --primary: #272a2c;
+  --secondary: #EEEEEE;
+  --accent: #00ADB5; */
+
+  /* --text: #dadada;
+  --text2: #b3b9b8;
+  --background: #141b1e;
+  --primary: #232a2d;
+  --secondary: #b3b9b8;
+  --accent: #6cbfbf; */
+
+  /* --text: #ffffff;
+  --text2: #ffffff82;
+  --background: #242729;
+  --primary: #2c3032;
+  --secondary: #2c3032;
+  --accent: #7bffff; */
+
+  /* --text: #dadada;
+  --text2: #ffffffa3; // 64%
+  --text3: #ffffff82; // half opacity
+  --background: #242729;
+  --background: #212324;
+  --primary: #232a2d;
+  --secondary: #b3b9b8;
+  --accent: #3898FF; */
+</style>

@@ -1,0 +1,88 @@
+---
+
+---
+
+<header class="header">
+  <div class="left_side">
+    <a href="/">wdias.dev()</a>
+  {/*<a href="/">{'{'}wdias.dev{'}'}</a>*/}
+  </div>
+
+  <div class="right_side">
+    {/*<a class="header_item" href="/#about_me">about me</a>*/}
+    {/*<a class="header_item" href="/#projects">projects</a>*/}
+    <a class="header_item" activeClass="header_item_active" href="/about">about</a>
+    <a class="header_item" activeClass="header_item_active" href="/projects">projects</a>
+    <a class="header_item" activeClass="header_item_active" href="/blog">blog</a>
+  </div>
+</header>
+
+<style>
+  .header {
+    max-width: 950px;
+    height: 70px;
+
+    margin: 0 auto;
+
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 410px) {
+      padding-right: 0.75rem;
+      padding-left: 0.75rem;
+    }
+
+    @media screen and (max-width: 355px) {
+      flex-direction: column;
+      /* height: auto; */
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+
+    .left_side {
+      :is(a) {
+        color: var(--accent);
+      }
+    }
+
+    .right_side {
+      display: flex;
+      gap: 20px;
+
+      @media screen and (max-width: 410px) {
+        gap: 10px;
+      }
+    }
+
+    .header_item {
+      position: relative;
+
+      &:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: -6px;
+        left: 0;
+        background-color: var(--accent);
+        transform-origin: bottom right;
+        transition: transform 0.20s ease-out;
+      }
+    }
+
+    .header_item_active, .header_item:hover {
+      color: var(--accent);
+    }
+  }
+</style>

@@ -1,0 +1,87 @@
+---
+
+---
+
+<div class="about_intro_container">
+  <span class="intro_hello">Hello, I'm</span>
+  <div class="name_container">
+    <span class="name">Wellington</span>
+    <span class="name_jp">ウェリントン</span>
+  </div>
+  <span class="intro_description">Software Engineer</span>
+  <div class="intro_links">
+    <a href="https://github.com/wdiasjunior" target="_blank">GitHub</a>
+    <a href="mailto:wdias@wdias.dev">E-mail</a>
+  </div>
+</div>
+
+<style>
+  .about_intro_container {
+    display: flex;
+    flex-direction: column;
+
+    .intro_hello {
+
+    }
+
+    .name_container {
+      width: fit-content;
+      font-size: 2.5rem;
+
+      &:hover {
+        .name {
+          display: none;
+        }
+
+        .name_jp {
+          display: block;
+        }
+      }
+
+      .name {
+        display: block;
+      }
+
+      .name_jp {
+        display: none;
+      }
+    }
+
+    .intro_description {
+
+    }
+  }
+
+  .intro_links {
+    margin-top: 24px;
+    :is(a) {
+      position: relative;
+
+      &:hover {
+        color: var(--accent);
+      }
+
+      &:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: -6px;
+        left: 0;
+        background-color: var(--accent);
+        transform-origin: bottom right;
+        transition: transform 0.20s ease-out;
+      }
+
+      &:first-child {
+        margin-right: 18px;
+      }
+    }
+  }
+</style>

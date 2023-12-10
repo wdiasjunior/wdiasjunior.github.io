@@ -1,0 +1,15 @@
+---
+
+import Layout from '../../../layouts/Layout.astro';
+import H2 from '../../../components/H2.astro';
+import '../Post.css';
+
+const title = "post test 1"
+---
+
+<Layout title={`${title}" - wdias.dev"`}>
+  <main class="post">
+    <h1>{title}</h1>
+    <H2 title="h2 title 1" />
+  </main>
+</Layout>

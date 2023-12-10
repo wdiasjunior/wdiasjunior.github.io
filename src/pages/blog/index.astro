@@ -1,0 +1,71 @@
+---
+
+import Layout from '../../layouts/Layout.astro';
+
+---
+
+<Layout title="Blog - wdias.dev">
+  <main>
+    <div class="blog_container">
+      <h1>Blog</h1>
+      <p>my thoughts about stuff that peaks my interest.</p>
+
+      <div class="post_list">
+
+        <span class="no_posts">Nothing to see here yet.</span>
+
+        {/*<a href="/blog/2023/bring-back-simpler-websites" class="post_item">
+          <span>Octobter 23, 2023</span>
+          <span>Bring back simple websites</span>
+        </a>
+
+        <a href="/blog/2023/post-test-1" class="post_item">
+          <span>Octobter 23, 2023</span>
+          <span>post-test-1</span>
+        </a>
+
+        <a href="/blog/2023/post-test-2" class="post_item">
+          <span>Octobter 23, 2023</span>
+          <span>post-test-2</span>
+        </a>*/}
+
+      </div>
+
+    </div>
+  </main>
+</Layout>
+
+<style>
+  .post_list {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    padding-top: 16px;
+
+    .post_item {
+      display: flex;
+      flex-direction: column;
+
+      :is(span):first-child {
+        color: var(--text-faded);
+        font-size: 0.85rem;
+        font-style: italic;
+      }
+
+      :is(span):last-child {
+        font-size: 1.125rem;
+        font-weight: bold;
+      }
+
+      :is(span):last-child:hover {
+        color: var(--accent);
+        text-decoration: underline;
+      }
+    }
+
+    .no_posts {
+      font-style: italic;
+      margin-top: 16px;
+    }
+  }
+</style>

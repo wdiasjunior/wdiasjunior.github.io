@@ -1,0 +1,190 @@
+---
+
+import { Prism } from '@astrojs/prism';
+import Layout from '../layouts/Layout.astro';
+
+---
+
+<Layout title="About - wdias.dev">
+  <main class="about_container">
+    <h1>About</h1>
+
+    {/*<div class="about_intro_container">
+      <span class="intro_hello">Hello, I'm</span>
+      <div class="name_container">
+        <span class="name">Wellington</span>
+        <span class="name_jp">ウェリントン</span>
+      </div>
+      <span class="intro_description">Software Engineer</span>
+      <div class="intro_links">
+        <a href="https://github.com/wdiasjunior" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+        <a href="mailto:wdias@wdias.dev">E-mail</a>
+      </div>
+    </div>*/}
+
+    <div class="about_me">
+      <p>
+        Hi, my name is Wellington and I'm a computer scientist
+        from Brazil, currently working as a Front-End developer, building
+        e-commerce websites.
+      </p>
+      <p>
+        I like making software that makes me more productive and people's lives
+        easier.
+      </p>
+      <p>
+        I'm a Linux enthusiast, open source advocate, kind of obsessed with
+        performance, musician, weightlifter and petrolhead.
+      </p>
+
+      <div class="intro_links">
+        <a href="https://github.com/wdiasjunior" target="_blank">GitHub</a>
+        <a href="mailto:wdias@wdias.dev">E-mail</a>
+      </div>
+    </div>
+
+    <!-- <pre>
+      <Prism lang="js" code={`
+const profile = {
+  firstName: 'Wellington',
+  lastName: 'Dias',
+  nickName: 'Will',
+  preferred_os: 'Linux',
+  stack: [
+    'JavaScript',
+    'TypeScript',
+    'React',
+    'React Native',
+    'Node.js',
+    'Next.js',
+    'SolidJS',
+    'Astro',
+    'Python',
+    'Django',
+    'PostgreSQL',
+    'MongoDB'
+  ]
+  fullstack: true,
+  learning: [
+    'Go',
+    'Gin',
+    'HTMX',
+    'Rust'
+  ]
+}
+    `} />
+      {/*<code>{`
+const profile = {
+  firstName: 'Wellington',
+  lastName: 'Dias',
+  nickName: 'Will',
+  preferred_os: 'Linux',
+  stack: [
+    'JavaScript',
+    'TypeScript',
+    'React',
+    'React Native',
+    'Node.js',
+    'Next.js',
+    'SolidJS',
+    'Astro',
+    'Python',
+    'Django',
+    'PostgreSQL',
+    'MongoDB'
+  ]
+  fullstack: true,
+  learning: [
+    'Go',
+    'Gin',
+    'HTMX',
+    'Rust'
+  ]
+}
+    `}</code>*/}
+    </pre> -->
+  </main>
+</Layout>
+
+<style>
+  .about_container {
+    display: flex;
+    flex-direction:column;
+
+    :is(p) {
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    :is(pre) {
+      /* display: flex;
+      justify-content: center;
+      align-items: center; */
+      align-self: center;
+      max-width: 580px;
+      padding-inline: 70px;
+      border-radius: 10px;
+      background-color: var(--primary);
+      margin-top: 40px;
+
+      /* @media (max-width: 570px) {
+        max-width: 100%;
+        font-size: 3.5vw;
+        padding-inline: 50px;
+      } */
+      @media (max-width: 460px) {
+        max-width: 100%;
+        padding-inline: 50px;
+      }
+      @media (max-width: 400px) {
+        padding-inline: 30px;
+      }
+      @media (max-width: 360px) {
+        padding-inline: 20px;
+      }
+      @media (max-width: 340px) {
+        padding-inline: 10px;
+      }
+
+      :is(code) {
+
+      }
+    }
+
+    .intro_links {
+      margin-top: 24px;
+      :is(a) {
+        position: relative;
+
+        &:hover {
+          color: var(--accent);
+        }
+
+        &:hover::after {
+          transform: scaleX(1);
+          transform-origin: bottom left;
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          transform: scaleX(0);
+          height: 2px;
+          bottom: -6px;
+          left: 0;
+          background-color: var(--accent);
+          transform-origin: bottom right;
+          transition: transform 0.20s ease-out;
+        }
+
+        &:first-child {
+          margin-right: 18px;
+        }
+      }
+    }
+  }
+</style>

@@ -1,0 +1,26 @@
+---
+
+import { projectsData } from './projectsData.js';
+import './Projects.css';
+
+---
+
+<div class="projects">
+  <h2>Projects</h2>
+
+  <div class="projects_list">
+    {projectsData.slice(0, 3).map((item) => (
+      <div class="project_item">
+        <a href={item.link}>
+          <div class="project_item_description">
+            <div class="project_item_description_left">
+              <h3>{item.title}</h3>
+              <p>{item.description.slice(0, 190)}{item.description.length > 190 && "..."}</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    ))}
+  </div>
+  <a class="see_more" href="/projects">see more projects <span>&rarr;</span></a>
+</div>
