@@ -23,51 +23,15 @@ const { title } = Astro.props;
     <Footer />
   </body>
 </html>
-<style is:global>
-  /* :root {
-    --accent: 136, 58, 234;
-    --accent-light: 224, 204, 250;
-    --accent-dark: 49, 10, 101;
-    --accent-gradient: linear-gradient(
-      45deg,
-      rgb(var(--accent)),
-      rgb(var(--accent-light)) 30%,
-      white 60%
-    );
-  }
-  html {
-    font-family: system-ui, sans-serif;
-    background: #13151a;
-    background-size: 224px;
-  }
-  code {
-    font-family:
-      Menlo,
-      Monaco,
-      Lucida Console,
-      Liberation Mono,
-      DejaVu Sans Mono,
-      Bitstream Vera Sans Mono,
-      Courier New,
-      monospace;
-  } */
 
-  /* @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap'); */
+<style is:global>
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
 
   :root {
-    /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    line-height: 1.5;
-    font-weight: 400; */
-
-    /* font-family: 'JetBrains Mono', monospace; */
-    /* font-family: 'Fira Mono', monospace; */
-    /* font-family: 'Courier new', monospace; */
-    /* font-family: Menlo, monospace; */
-    /* font-family: Menlo, Courier, "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono", "Liberation Mono", monospace; */
-    font-family: "DejaVu Sans Mono", monospace;
-
-    /* font-family: "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono",
-    "Liberation Mono", Courier, Menlo, monospace; */
+    font-family: 'JetBrains Mono', monospace;
+    /* font-family: "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono", "Liberation Mono", Courier, Menlo, monospace; */
+    /* font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace; */
+    /* font-family: "DejaVu Sans Mono", monospace; */
 
     /* color-scheme: only light; */
     color-scheme: light dark;
@@ -108,7 +72,7 @@ const { title } = Astro.props;
     padding-right: 1.5rem;
     padding-left: 1.5rem;
     padding-top: 1rem;
-    padding-bottom: 5rem;
+    padding-bottom: 1.5rem;
 
     @media screen and (max-width: 410px) {
       padding-right: 0.75rem;
@@ -127,87 +91,83 @@ const { title } = Astro.props;
     text-decoration: inherit;
   }
 
-  /*
-
-  --text: #dff1f0;
+  /* --text: #dff1f0;
   --background: #0c1c1c;
   --primary: #275957;
   --secondary: #091515;
-  --accent: #48a3a0;
+  --accent: #48a3a0; */
 
-  --text: #f4f7fb;
+  /* --text: #f4f7fb;
   --background: #060a0f;
   --primary: #203756;
   --secondary: #070c13;
-  --accent: #3e6ca8;
+  --accent: #3e6ca8; */
 
-  --text: #ffffff;
+  /* --text: #ffffff;
   --background: #011310;
   --primary: #0be5c1;
   --secondary: #03493d;
-  --accent: #24f5d2;
+  --accent: #24f5d2; */
 
-  --text: #f6fdfb;
+  /* --text: #f6fdfb;
   --background: #03110d;
   --primary: #24cc97;
   --secondary: #083023;
-  --accent: #2bdaa2;
+  --accent: #2bdaa2; */
 
-  --text: #f2fcfc;
+  /* --text: #f2fcfc;
   --background: #082b29;
   --primary: #3fd9d4;
   --secondary: #092f2e;
-  --accent: #2ed6d0;
+  --accent: #2ed6d0; */
 
-  --text: #f7fdfb;
+  /* --text: #f7fdfb;
   --background: #000000;
   --primary: #51dba4;
   --secondary: #08261a;
-  --accent: #2acf8d;
+  --accent: #2acf8d; */
 
-  --text: #e0e8f0;
+  /* --text: #e0e8f0;
   --background: #111922;
   --primary: #3d5a7b;
   --secondary: #111922;
-  --accent: #547dab;
+  --accent: #547dab; */
 
-  --text: #e5f0ef;
+  /* --text: #e5f0ef;
   --background: #020303;
   --primary: #80b7b3;
   --secondary: #0f1a19;
-  --accent: #589d97;
+  --accent: #589d97; */
 
-  --text: #e4f0f2;
+  /* --text: #e4f0f2;
   --background: #0a1415;
   --primary: #4c939a;
   --secondary: #0f1d1f;
-  --accent: #52a0a7;
+  --accent: #52a0a7; */
 
-  --text: #f6fcfe;
+  /* --text: #f6fcfe;
   --background: #000000;
   --primary: #7cd2ee;
   --secondary: #082e3b;
-  --accent: #2bb5e3;
+  --accent: #2bb5e3; */
 
-  --text: #e5eff0;
+  /* --text: #e5eff0;
   --background: #080c0d;
   --primary: #8fb9bd;
   --secondary: #1c2f30;
-  --accent: #6ea5aa;
+  --accent: #6ea5aa; */
 
-  --text: #f7fdfd;
+  /* --text: #f7fdfd;
   --background: #061313;
   --primary: #8fdbdb;
   --secondary: #0c2727;
-  --accent: #3ec1c1;
+  --accent: #3ec1c1; */
 
-  --text: #f1f7fd;
+  /* --text: #f1f7fd;
   --background: #010205;
   --primary: #0a2e5c;
   --secondary: #041020;
-  --accent: #186bd8;
-
-  */
+  --accent: #186bd8; */
 
   /* --text: #ffffff;
   --background: #011310;
@@ -226,8 +186,6 @@ const { title } = Astro.props;
   --primary: #33dba6;
   --secondary: #cff7ea;
   --accent: #25d49d; */
-
-  /*  */
 
   /* --text: #f6fdfb;
   --background: #03110d;

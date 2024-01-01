@@ -1,0 +1,65 @@
+---
+
+import './Projects.css';
+
+---
+
+<div class="projects">
+  <h2>Featured Posts</h2>
+
+  <div class="post_list">
+    <a href="/blog/2023/bring-back-simpler-websites" class="post_item">
+      <span>Octobter 23, 2023</span>
+      <span>Bring back simple websites</span>
+    </a>
+
+    <a href="/blog/2023/post-test-1" class="post_item">
+      <span>Octobter 23, 2023</span>
+      <span>post-test-1</span>
+    </a>
+
+    <a href="/blog/2023/post-test-2" class="post_item">
+      <span>Octobter 23, 2023</span>
+      <span>post-test-2</span>
+    </a>
+  </div>
+  <a class="see_more" href="/blog">see more posts <span>&rarr;</span></a>
+</div>
+
+<style>
+  .projects {
+    margin-bottom: 5rem;
+
+    h2 {
+      margin-top: 4rem;
+    }
+
+    .post_list {
+      display: flex;
+      flex-direction: column;
+      gap: 26px;
+      margin-bottom: 20px;
+
+      .post_item {
+        display: flex;
+        flex-direction: column;
+
+        :is(span):first-child {
+          color: var(--text-faded);
+          font-size: 0.85rem;
+          font-style: italic;
+        }
+
+        :is(span):last-child {
+          font-size: 1.125rem;
+          font-weight: bold;
+        }
+
+        :is(span):last-child:hover {
+          color: var(--accent);
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+</style>

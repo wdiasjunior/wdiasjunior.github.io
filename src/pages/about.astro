@@ -9,21 +9,6 @@ import Layout from '../layouts/Layout.astro';
   <main class="about_container">
     <h1>About</h1>
 
-    {/*<div class="about_intro_container">
-      <span class="intro_hello">Hello, I'm</span>
-      <div class="name_container">
-        <span class="name">Wellington</span>
-        <span class="name_jp">ウェリントン</span>
-      </div>
-      <span class="intro_description">Software Engineer</span>
-      <div class="intro_links">
-        <a href="https://github.com/wdiasjunior" target="_blank" rel="noopener noreferrer">
-          GitHub
-        </a>
-        <a href="mailto:wdias@wdias.dev">E-mail</a>
-      </div>
-    </div>*/}
-
     <div class="about_me">
       <p>
         Hi, my name is Wellington and I'm a computer scientist
@@ -45,68 +30,28 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </div>
 
-    <span class="skill">JavaScript</span>
+    <span class="skills_title">Skills</span>
+    <div class="skills">
 
-    <!-- <pre>
-      <Prism lang="js" code={`
-const profile = {
-  firstName: 'Wellington',
-  lastName: 'Dias',
-  nickName: 'Will',
-  preferred_os: 'Linux',
-  stack: [
-    'JavaScript',
-    'TypeScript',
-    'React',
-    'React Native',
-    'Node.js',
-    'Next.js',
-    'SolidJS',
-    'Astro',
-    'Python',
-    'Django',
-    'PostgreSQL',
-    'MongoDB'
-  ]
-  fullstack: true,
-  learning: [
-    'Go',
-    'Gin',
-    'HTMX',
-    'Rust'
-  ]
-}
-    `} />
-      {/*<code>{`
-const profile = {
-  firstName: 'Wellington',
-  lastName: 'Dias',
-  nickName: 'Will',
-  preferred_os: 'Linux',
-  stack: [
-    'JavaScript',
-    'TypeScript',
-    'React',
-    'React Native',
-    'Node.js',
-    'Next.js',
-    'SolidJS',
-    'Astro',
-    'Python',
-    'Django',
-    'PostgreSQL',
-    'MongoDB'
-  ]
-  fullstack: true,
-  learning: [
-    'Go',
-    'Gin',
-    'HTMX',
-    'Rust'
-  ]
-}
-    `}</code>*/}
-    </pre> -->
+      <span class="skill">Go</span>
+      <span class="skill">Gin</span>
+      {/*<span class="skill">HTMX</span>*/}
+      <span class="skill">Rust</span>
+      {/*<span class="skill">C</span>*/}
+      <span class="skill">JavaScript</span>
+      <span class="skill">TypeScript</span>
+      <span class="skill">React</span>
+      <span class="skill">React Native</span>
+      <span class="skill">Next.js</span>
+      <span class="skill">Node.js</span>
+      <span class="skill">Express.js</span>
+      <span class="skill">SolidJS</span>
+      <span class="skill">Astro</span>
+      <span class="skill">Python</span>
+      <span class="skill">Django</span>
+      <span class="skill">PostgreSQL</span>
+      <span class="skill">MongoDB</span>
+    </div>
   </main>
 </Layout>
 
@@ -189,12 +134,25 @@ const profile = {
       }
     }
 
-    .skill {
-      padding: .25rem .5rem;
-      border: 1px solid var(--accent);
-      border-radius: .25rem;
-      color: #4b5563;
-      font-size: .675rem;
+    .skills_title {
+      margin-top: 24px;
+    }
+    .skills {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      column-gap: .75rem;
+      row-gap: .5rem;
+      margin-top: 12px;
+
+      .skill {
+        padding: .25rem .5rem;
+        border: 1px solid var(--accent);
+        border-radius: .25rem;
+        color: var(--text);
+        font-size: .675rem;
+        width: fit-content;
+      }
     }
   }
 </style>

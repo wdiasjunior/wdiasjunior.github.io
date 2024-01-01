@@ -1,4 +1,6 @@
 .projects {
+  margin-bottom: 2.5rem;
+
   .projects_list {
     display: flex;
     flex-direction: column;
