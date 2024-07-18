@@ -70,37 +70,40 @@ import Layout from '../../layouts/Layout.astro';
       display: none;
     }
   }
+  .blog_container {
+    margin-bottom: 30px;
 
-  .post_list {
-    display: flex;
-    flex-direction: column;
-    gap: 26px;
-    padding-top: 47px;
-
-    .post_item {
+    .post_list {
       display: flex;
       flex-direction: column;
+      gap: 26px;
+      padding-top: 47px;
 
-      :is(span):first-child {
-        color: var(--text-faded);
-        font-size: 0.85rem;
+      .post_item {
+        display: flex;
+        flex-direction: column;
+
+        :is(span):first-child {
+          color: var(--text-faded);
+          font-size: 0.85rem;
+          font-style: italic;
+        }
+
+        :is(span):last-child {
+          font-size: 1.125rem;
+          font-weight: bold;
+        }
+
+        :is(span):last-child:hover {
+          color: var(--accent);
+          text-decoration: underline;
+        }
+      }
+
+      .no_posts {
         font-style: italic;
+        margin-top: 16px;
       }
-
-      :is(span):last-child {
-        font-size: 1.125rem;
-        font-weight: bold;
-      }
-
-      :is(span):last-child:hover {
-        color: var(--accent);
-        text-decoration: underline;
-      }
-    }
-
-    .no_posts {
-      font-style: italic;
-      margin-top: 16px;
     }
   }
 </style>

@@ -15,7 +15,7 @@ import './Projects.css';
           <div class="project_item_description">
             <div class="project_item_description_left">
               <h3>{item.title}</h3>
-              <p>{item.description.slice(0, 190)}{item.description.length > 190 && "..."}</p>
+              <p>{item.description.slice(0, 190).trim()}{item.description.length > 190 && "..."}</p>
             </div>
           </div>
         </a>
