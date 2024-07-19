@@ -8,35 +8,29 @@ import Layout from '../../layouts/Layout.astro';
   <main>
     <div class="blog_container">
       <h1>Blog</h1>
-      <div class="blog_intro_container">
-        <span class="blog_intro">my thoughts about stuff that pique my interest.</span>
-        <!-- <span class="blog_intro_joke">thoughts go brrr</span> -->
-        <!-- mobile css min height kinda broken -->
-        <!-- put this is italic? -->
-      </div>
+      <span>my thoughts about stuff that pique my interest.</span>
 
       <div class="post_list">
-
         <!-- <span class="no_posts">Nothing to see here yet.</span> -->
 
-        <a href="/blog/2024/building-a-custom-mechanical-keyboard" class="post_item">
+        <a class="post_item" href="/blog/2024/building-a-custom-mechanical-keyboard">
           <span>July 16, 2024</span>
           <span>Building a Custom Mechanical Keyboard</span>
         </a>
 
-        <!--  -->
+        <!--------------------------------------------------------------------->
 
-        {/*<a href="/blog/2023/bring-back-simpler-websites" class="post_item">
+        {/*<a class="post_item" href="/blog/2023/bring-back-simpler-websites">
           <span>Octobter 23, 2023</span>
           <span>Bring back simpler websites</span>
         </a>
 
-        <a href="/blog/2023/post-test-1" class="post_item">
+        <a class="post_item" href="/blog/2023/post-test-1">
           <span>Octobter 23, 2023</span>
           <span>post-test-1</span>
         </a>
 
-        <a href="/blog/2023/post-test-2" class="post_item">
+        <a class="post_item" href="/blog/2023/post-test-2">
           <span>Octobter 23, 2023</span>
           <span>post-test-2</span>
         </a>*/}
@@ -48,28 +42,6 @@ import Layout from '../../layouts/Layout.astro';
 </Layout>
 
 <style>
-  .blog_intro_container {
-    width: fit-content;
-    display: inline-block;
-
-    /* &:hover {
-      .blog_intro {
-        display: none;
-      }
-
-      .blog_intro_joke {
-        display: block;
-      }
-    } */
-
-    .blog_intro {
-      display: block;
-    }
-
-    .blog_intro_joke {
-      display: none;
-    }
-  }
   .blog_container {
     margin-bottom: 30px;
 

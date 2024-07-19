@@ -1,14 +1,5 @@
 export const projectsData = [
   {
-    link: "#",
-    title: "This website",
-    description: "Built with Astro. Simple, fast and gets the job done.",
-    img: "",
-    imgAlt: "",
-    imgWidth: 0,
-    imgHeight: 0,
-  },
-  {
     link: "https://barbellwhip.com/",
     title: "BarbellWhip",
     description: "An open source workout management app built with React Native, with the goal of improving readability of complex training programs that make use of big spreadsheets mid training session, of sports such as powerlifting and weightlifting. It currently features a program review page, a program editor and a RM(repetition max) and weight plate calculators.",
@@ -36,6 +27,15 @@ export const projectsData = [
     imgHeight: 0,
   },
   {
+    link: "#",
+    title: "This website",
+    description: "Built with Astro. Simple, fast and gets the job done.",
+    img: "",
+    imgAlt: "",
+    imgWidth: 0,
+    imgHeight: 0,
+  },
+  {
     link: "https://github.com/wdiasjunior/split-keyboard",
     title: "Split Ortholinear Keyboard",
     description: "A 87 key ortholinear split keyboard that uses 2 Pi Picos and the KMK firmware.",
@@ -53,13 +53,4 @@ export const projectsData = [
     imgWidth: 227,
     imgHeight: 400,
   },
-  // {
-  //   link: "src/pages/wmUI/wmUI.html",
-  //   title: "wmUI",
-  //   description: "A responsive website that I made out of boredom with the intention to use it as my browser's startup page, that resembles a Linux Window Manager interface.",
-  //   img: "public/wmUI.webp",
-  //   imgAlt: "wmUI",
-  //   imgWidth: 548,
-  //   imgHeight: 400,
-  // },
 ]

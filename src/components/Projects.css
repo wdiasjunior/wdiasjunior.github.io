@@ -18,7 +18,7 @@
     /* background-color: #ffffff08; */
     /* background-color: var(--secondary); */
     background-color: var(--primary);
-    
+
     /*
       TODO
       remove background color?
@@ -65,6 +65,7 @@
 
     &:hover {
       color: var(--accent);
+      text-decoration: underline;
     }
   }
 }

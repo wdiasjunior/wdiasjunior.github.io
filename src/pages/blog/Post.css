@@ -15,7 +15,7 @@
   }
 
   :is(h2) {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     /* font-size: 20px; */
 
     :is(a) {
@@ -40,6 +40,10 @@
     text-underline-offset: 2px;
   }
 
+  :is(e) {
+    color: var(--accent);
+  }
+
   :is(blockquote) {
     display: block;
     font-style: italic;
@@ -56,13 +60,5 @@
     max-width: 100%;
     height: auto;
     border-radius: .5rem;
-  }
-
-  .img_caption {
-    color: var(--color-subtext);
-    font-size: 1rem;
-    font-style: italic;
-    text-align: center;
-    padding-top: 0.5rem;
   }
 }

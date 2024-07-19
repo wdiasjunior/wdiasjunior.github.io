@@ -1,0 +1,26 @@
+---
+
+const { src, alt, subtitle } = Astro.props;
+
+---
+
+<div class="post_img_container">
+  <img src={src} alt={alt} />
+  <span>{subtitle}</span>
+</div>
+
+<style>
+  .post_img_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    span {
+      font-size: 1rem;
+      font-style: italic;
+      text-align: center;
+      padding-top: 0.5rem;
+    }
+  }
+</style>
