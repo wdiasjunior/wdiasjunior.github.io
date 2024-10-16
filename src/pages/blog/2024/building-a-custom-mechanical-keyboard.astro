@@ -15,9 +15,9 @@ const title = "Building a Custom Mechanical Keyboard"
     <p class="post_date">Jul 16, 2024</p>
 
     <p class="italic_intro">
-      About a year after I build it I'm finally writing about the process of
+      About a year after I'm finally writing about the process of
       desining and building my first custom mechanical keyboard, and what my
-      experience with has been like with it as my daily driver.
+      experience has been like with it as my daily driver.
     </p>
 
     <!-- TODO -->
@@ -66,7 +66,11 @@ const title = "Building a Custom Mechanical Keyboard"
       red linear switches, but that changed when I started browsing subreddits
       learned about (almost) all different kinds of keyboards, layouts, sizes, etc.
     </p>
-    <!-- <img src="/src/img/old-membrane-keyboard.jpg" alt="old membrane keyboard" /> -->
+    <PostIMG
+      src="/src/img/old-membrane-keyboard.jpg"
+      alt="old membrane keyboard"
+      subtitle="old membrane keyboard"
+    />
     <p>
       At first I became interested in smaller keyboards, around 60% and then the smaller
       40%, which was actually just my brain trying to convince me that I would need
@@ -108,6 +112,15 @@ const title = "Building a Custom Mechanical Keyboard"
       and relying on multiple layers for all the less used keys, but whatever. ¯\_(ツ)_/¯
     </p>
 
+    You might be wondering "why on earth would you need three space bars for?",
+    to which I would reply that I only need two, but now I have three.
+    when I'm typing I use the space bar with my right thumb, but when I'm playing
+    a game I use the space bar with my left thumb, so I made a separate layer just for this
+    I'm planning on using the left ones as modifier keys in the main layer
+    (kinda like a thumb cluster, but less ergonomic) to control a window manager
+    when I finally make the switch from a desktop environment. I use Arch, btw.
+
+
     <H2 title="The parts" />
     <p>
       With the layout in mind I began searching AliExpress for the best deals on
@@ -119,7 +132,7 @@ const title = "Building a Custom Mechanical Keyboard"
       <li>2x Raspberry Pi Pico</li>
       <li>100x Red Linear Gateron Switches</li>
       <li>1x set of stabilizers</li>
-      <li>Keycaps with Japanese legends to satisfy the weeb in me</li>
+      <li>Keycaps (with Japanese legends to make the weeb in me happy)</li>
       <li>Lorem ipsum dolor sit amet</li>
     </ul>
     <p>
@@ -141,6 +154,10 @@ const title = "Building a Custom Mechanical Keyboard"
       venenatis sed erat vitae eleifend.
     </p>
 
+    Doing some research I found this extremely helpful blog post
+    https://sanderg.nl/en/posts/how-to-split-keyboard-with-rp2040-and-kmk/
+    detailing how to wire the interconnect for the two Pi Picos
+
     <H2 title="The firmware" />
     <p>
       After some research on firmwares for custom keyboards I saw that by far
@@ -149,6 +166,9 @@ const title = "Building a Custom Mechanical Keyboard"
        to use and , I figured I would try KMK
       and see
     </p>
+    I'm keeping the Logitech keyboard as a backup
+    in case I need to modify the firmware, in case something breaks,
+    or in case I want to try a different firmware such as QMK
 
     <H2 title="An abomination" />
 
@@ -159,6 +179,9 @@ const title = "Building a Custom Mechanical Keyboard"
     looks pretty damn cool
     interconnect problems
     totally worth it!
+    100% would build one again
+
+    and while this is definitely not an "end game" keyboard I am extremely happy with it.
 
     <p>
       Integer imperdiet lectus in dapibus faucibus. Curabitur ac volutpat ex.
