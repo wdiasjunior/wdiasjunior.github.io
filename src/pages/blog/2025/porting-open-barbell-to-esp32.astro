@@ -1,0 +1,123 @@
+---
+
+import Layout from '../../../layouts/Layout.astro';
+import H2 from '../../../components/H2.astro';
+import PostIMG from '../../../components/PostIMG.astro';
+import '../Post.css';
+
+const title = "Porting the OpenBarbell to the ESP32"
+
+---
+
+<Layout title={`${title}" - wdias.dev"`}>
+  <main class="post">
+    <h1>{title}</h1>
+    <p class="post_date">Jul 16, 2024</p>
+
+    <p class="italic_intro">
+      Sed purus metus, luctus vel suscipit non, ultricies at ex. Sed at quam
+      metus. Proin porta viverra mi eu bibendum. In sit amet mi at mi scelerisque
+      feugiat. Maecenas pharetra ante quis ligula sollicitudin, non facilisis
+      magna sollicitudin. Maecenas ac tempus massa. Sed ultricies rutrum tellus ut
+      consectetur. Fusce eu gravida leo, in imperdiet diam.
+    </p>
+
+    <H2 title="Title H2" />
+    <p>
+      - bought the parts needed
+      - started off by trying to get the code to at least compile and no render my purchase a mistake
+      - got it working. new bluetooth lib and removed battery lib dependencies/sensors use
+    </p>
+    <!-- <img src="/src/img/old-membrane-keyboard.jpg" alt="old membrane keyboard" /> -->
+    <p>
+      At first I became interest smaller keyboards, around 60% and then the smaller
+      40%. That led to me discovering ortholinear layouts and I eventually found
+      split and ergonomic keyboards and became familiar with all the jargon around it.
+    </p>
+    <p>
+      I got so into it that I started researching what it takes to build a keyboard
+      from scratch, and it turned out to be a lot simpler than I expected.
+    </p>
+
+    <H2 title="Title H2" />
+    <p>
+      Nulla urna tellus, bibendum ac commodo at, viverra at metus. Fusce
+      scelerisque lacus nec mi dapibus convallis. Nullam posuere ligula ac pulvinar
+      eleifend. Nulla facilisi. Aenean blandit egestas felis eget rutrum. Ut auctor
+      dictum leo nec pulvinar. Cras nec purus hendrerit, commodo sapien at,
+      suscipit magna. Maecenas pellentesque laoreet aliquam. Suspendisse maximus
+      hendrerit sollicitudin. Nunc sollicitudin tortor massa, eget cursus eros
+      fringilla ac. Sed tempor, odio non tincidunt tempus, justo tortor fringilla
+      lectus, id tempor neque enim et diam. Nulla mollis ut diam eget bibendum.
+      Ut eros libero, rhoncus quis lectus sit amet, fermentum pretium ante.
+      Duis posuere eget dolor luctus malesuada. Cras dictum pulvinar placerat.
+    </p>
+
+    <PostIMG
+      src="/src/img/split-keyboard-layout.jpg"
+      alt="split keyboard layout"
+      subtitle="split keyboard layout"
+    />
+
+    <p>
+      Sed purus metus, luctus vel suscipit non, ultricies at ex. Sed at quam
+      metus. Proin porta viverra mi eu bibendum. In sit amet mi at mi scelerisque
+      feugiat. Maecenas pharetra ante quis ligula sollicitudin, non facilisis
+      magna sollicitudin. Maecenas ac tempus massa. Sed ultricies rutrum tellus ut
+      consectetur. Fusce eu gravida leo, in imperdiet diam.
+    </p>
+
+    <H2 title="Title H2" />
+    <p>
+      Pellentesque eu feugiat elit. Nulla bibendum nunc volutpat enim euismod
+      molestie at eu massa. Quisque tristique nulla at sapien volutpat, eget
+      venenatis velit euismod. Nunc quis justo volutpat, pharetra lacus eget,
+      molestie nibh. Nam suscipit feugiat ultrices.
+    </p>
+    <ul>
+      <li>Lorem ipsum dolor sit amet</li>
+      <li>Lorem ipsum dolor sit amet</li>
+      <li>Lorem ipsum dolor sit amet</li>
+      <li>Lorem ipsum dolor sit amet</li>
+      <li>Lorem ipsum dolor sit amet</li>
+    </ul>
+    <p>
+      Curabitur id scelerisque ipsum.
+      Vestibulum libero turpis, rhoncus eget turpis at, dapibus tincidunt tellus.
+      Vivamus finibus ante quis eros maximus, quis volutpat odio sollicitudin.
+      Donec finibus semper cursus. In id commodo leo. Donec congue sed sapien
+      quis finibus. Donec varius mi id vulputate lobortis. Donec interdum tortor
+      venenatis magna sagittis, ultricies dictum sem vestibulum. Mauris mauris
+      eros, pulvinar a mi sit amet, mollis molestie turpis.
+    </p>
+
+    <H2 title="Title H2" />
+    <p>
+      Integer imperdiet lectus in dapibus faucibus. Curabitur ac volutpat ex.
+      Curabitur sit amet velit quam. Nulla pharetra maximus elit quis pretium.
+      Suspendisse quam quam, vehicula et velit non, pellentesque pulvinar lorem.
+      Etiam mauris risus, luctus sed pharetra at, lobortis et felis. Phasellus
+      venenatis sed erat vitae eleifend.
+    </p>
+    <blockquote>
+      <p>
+        Quisque interdum accumsan diam, vitae
+        rutrum mi tincidunt a. Mauris accumsan a sem vitae dictum. Praesent mauris
+        metus, tristique in egestas vitae, tincidunt non velit. Sed blandit mi
+        non neque suscipit elementum. Mauris at sapien vehicula, tempor tortor
+        id, volutpat risus. Praesent sodales est nec dui dapibus dictum.
+        Nunc accumsan sed urna a tempus.
+      </p>
+    </blockquote>
+
+    <H2 title="Title H2" />
+    <p>
+      Integer imperdiet lectus in dapibus faucibus. Curabitur ac volutpat ex.
+      Curabitur sit amet velit quam. Nulla pharetra maximus elit quis pretium.
+      Suspendisse quam quam, vehicula et velit non, pellentesque pulvinar lorem.
+      Etiam mauris risus, luctus sed pharetra at, lobortis et felis. Phasellus
+      venenatis sed erat vitae eleifend.
+    </p>
+
+  </main>
+</Layout>
