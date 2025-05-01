@@ -28,6 +28,15 @@ export const projectsData = [
   },
   {
     link: "#",
+    title: "OpenBarbell-ESP32 (WIP)",
+    description: "A fork of the OpenBarbell project ported to the ESP32 microcontroller with Bluetooth integration and improved documentation.",
+    img: "",
+    imgAlt: "",
+    imgWidth: 0,
+    imgHeight: 0,
+  },
+  {
+    link: "#",
     title: "This website",
     description: "Built with Astro. Simple, fast and gets the job done.",
     img: "",
@@ -47,7 +56,7 @@ export const projectsData = [
   {
     link: "https://wdias.dev/BarbellTracker/",
     title: "OpenCV.js Barbell Tracker",
-    description: "This is my university gradutaion project. A JavaScript application for weightlifting video analysis that runs the OpenCV library directly in the browser, with the following functionalities: Barbell Path Tracker, Realtime Concentric Velocity, Realtime Acceleration, Realtime Horizontal Displacement.",
+    description: "This is my university graduation project. A JavaScript application for weightlifting video analysis running the OpenCV library directly in the browser, with the following functionalities: Barbell Path Tracker, Realtime Concentric Velocity, Realtime Acceleration, Realtime Horizontal Displacement.",
     img: "public/barbellTracker.webp",
     imgAlt: "Barbell Tracker",
     imgWidth: 227,
