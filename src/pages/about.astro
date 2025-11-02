@@ -16,32 +16,30 @@ import Layout from '../layouts/Layout.astro';
         building e-commerce solutions.
       </p>
       <p>
-        I strive to make software that doesn't suck.
+        I strive to make software that doesn't suck. And I hope that one day I'll be
+        able to stop working as a web dev to work on interesting stuff that's
+        <span class="italic">actually</span> useful to people on their daily live's,
+        helps progress scientific discoveries
       </p>
       <p>
-        I'm a Linux enthusiast (I use Arch, btw), open source advocate, kind of
-        obsessed with software performance, musician, weightlifter and petrolhead.
+        I'm a huge nerd, Linux enthusiast (I use Arch, btw), tinkerer, open source advocate,
+        kind of obsessed with software performance, (frustrated) musician,
+        weightlifter/powerlifter and petrolhead.
+      </p>
+
+      <h2>What is this site?</h2>
+      <p>
+        It is my personal, non-commercial website, where I'll post mainly about my
+        software and hardware projects, various bits of information for my own
+        reference, as well as publish write-ups that I believe might be interesting
+        to like minded people about tech, language learning, cars, video games,
+        books, etc.
       </p>
       <p>
-        I've always wanted a blog/website to call my own, and with the rise of
-        social media, AI and enshittification, I decided to take matters in my
-        own try and bring back some of the charm of the 90's and 2000's era
-        internet back to life.
+        It is a website the way we understood websites to be, back in the 90s and
+        early 2000s, fun and interesting, without all the crap that React and
+        the JavaScript ecosystem, analytics, intrusive ads and AI slop brought upon us.
       </p>
-
-      <!--
-
-      What is this site?
-
-      It is my personal, non-commercial website, where I post about software and
-      hardware projects, where I collect various information for my own reference,
-      as well as publish write-ups that I believe might be interesting to like
-      minded people. It is a website the way we understood websites to be, back
-      in the 90s and early 2000s, before everyone and their dogs were online and
-      the internet was destroyed primarily but not exclusively by big tech
-      corporations, politics, more politics and AI slop.
-
-      -->
 
       <div class="intro_links">
         <a href="https://github.com/wdiasjunior" target="_blank">GitHub</a>
@@ -49,7 +47,7 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </div>
 
-    <span class="skills_title">Skills</span>
+    <h2 class="skills_title">Skills</h2>
     <div class="skills">
       <span class="skill">Go</span>
       <span class="skill">Gin</span>
@@ -130,7 +128,7 @@ import Layout from '../layouts/Layout.astro';
       }
     }
 
-    .skills_title {
+    :is(h2), .skills_title {
       margin-top: 24px;
       font-weight: bold;
     }

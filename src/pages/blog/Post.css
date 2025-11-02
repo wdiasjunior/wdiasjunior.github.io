@@ -14,24 +14,27 @@
     margin-top: 47px;
   }
 
-  :is(h2) {
+  :is(h2), :is(h3) {
     font-size: 1.4rem;
-    /* font-size: 20px; */
 
     :is(a) {
       color: var(--text);
       opacity: .5;
       margin-left: 12px;
     }
+
     :is(a):hover {
       color: var(--accent);
       opacity: 1;
     }
   }
 
+  :is(h3) {
+    font-size: 1.2rem;
+  }
+
   :is(p) {
     font-size: 1rem;
-    /* font-size: 16px; */
   }
 
   :is(a) {
@@ -50,10 +53,10 @@
     padding: 1.5rem 1.5rem;
     border-inline-start: 0.35rem solid var(--accent);
     margin-left: 0;
+
     :is(p) {
       margin: 0;
     }
-
   }
 
   :is(img) {

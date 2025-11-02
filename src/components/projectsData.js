@@ -17,6 +17,15 @@ export const projectsData = [
     imgWidth: 0,
     imgHeight: 0,
   },
+  // {
+  //   link: "https://github.com/wdiasjunior/OpenBarbell-ESP32",
+  //   title: "OpenBarbell-ESP32",
+  //   description: "A port of the OpenBarbell velocity tracker project to the ESP32 using easy to find off the shelf parts.",
+  //   img: "",
+  //   imgAlt: "",
+  //   imgWidth: 0,
+  //   imgHeight: 0,
+  // },
   {
     link: "https://barbellwhip.com/",
     title: "BarbellWhip",

@@ -1,12 +1,19 @@
 ---
 
-const { src, alt, subtitle } = Astro.props;
+const { src, alt, subtitle, imgCreditsText, imgCreditsLinkText, imgCreditsLink } = Astro.props;
 
 ---
 
 <div class="post_img_container">
   <img src={src} alt={alt} />
-  <span>{subtitle}</span>
+  {subtitle &&
+    <div>
+      <span>{subtitle}</span>
+      {imgCreditsText !== "" &&
+        <span>{imgCreditsLinkText} <a href={imgCreditsLink} target="_blank">{imgCreditsText}</a>.</span>
+      }
+    </div>
+  }
 </div>
 
 <style>
@@ -16,11 +23,24 @@ const { src, alt, subtitle } = Astro.props;
     align-items: center;
     flex-direction: column;
 
-    span {
+    :is(div) {
+      display: flex;
+      flex-direction: row;
+      gap: 4px;
+    }
+
+    :is(span), :is(a) {
       font-size: 1rem;
       font-style: italic;
       text-align: center;
       padding-top: 0.5rem;
+    }
+
+    :is(a) {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      margin-left: 8px;
     }
   }
 </style>
