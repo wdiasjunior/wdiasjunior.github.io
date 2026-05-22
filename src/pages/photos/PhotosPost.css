@@ -1,0 +1,14 @@
+.post {
+  :is(h1) {
+    font-size: 1.6rem;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+
+  :is(img) {
+    max-width: 100%;
+    height: auto;
+    border-radius: .5rem;
+    margin-bottom: 10px;
+  }
+}
