@@ -18,5 +18,6 @@ quote
 
 image
     should images live in /public or /src/img ?
+    cloudflare cdn? "https://cdn.wdias.dev/"
 
 embed video
