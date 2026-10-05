@@ -1,0 +1,58 @@
+# OpenAI, ChatGPT
+# https://platform.openai.com/docs/gptbot
+User-agent: GPTBot
+Disallow: /
+
+# Google AI (Gemini, etc)
+# https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers
+User-agent: Google-Extended
+Disallow: /
+
+# Apple Intelligence
+# https://apple.com
+User-agent: Applebot-Extended
+Disallow: /
+
+# Meta AI
+User-agent: Meta-ExternalAgent
+Disallow: /
+
+# Anthropic (Claude)
+# https://darkvisitors.com/agents/claudebot
+User-agent: ClaudeBot
+User-agent: anthropic-ai
+Disallow: /
+
+# Perplexity
+# https://docs.perplexity.ai/docs/perplexitybot
+User-agent: PerplexityBot
+Disallow: /
+
+# Cohere.ai
+# https://darkvisitors.com/agents/cohere-ai
+User-agent: cohere-ai
+Disallow: /
+
+# ByteDance / TikTok (Ultra-aggressive AI scraper)
+# https://darkvisitors.com
+User-agent: Bytespider
+Disallow: /
+
+# Tencent AI & Scrapers
+User-agent: TencentTraveler
+Disallow: /
+
+# Webz.io / Omgili (Massive AI data broker)
+User-agent: webzio-extended
+User-agent: Omgilibot
+Disallow: /
+
+# Block common crawl
+# https://commoncrawl.org/ccbot
+User-agent: CCBot
+Disallow: /
+
+# Facebook
+# https://developers.facebook.com/docs/sharing/bot/
+User-agent: FacebookBot
+Disallow: /
